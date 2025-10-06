@@ -443,8 +443,7 @@
                 <p>
                     Professional with solid experience in Project Management and Process Implementation, always making use of modern methodologies, such as Scrum and PMO. <br>
                     Strong performance in developing organizational change strategies, raising improvement needs from teams to financial management and process optimization. <br>
-                    Use of background in technologies such as Microsoft ADO, Jira, Oracle, Python, Machine Learning, AI Agents, Data Engineering, SAFe, to help in new data driven automation projects in different business areas,<br>
-                    aiming at the continuous improvement of organizations.<br>
+                    Use of background in technologies such as Microsoft ADO, Jira, Oracle, Python, Machine Learning, AI Agents, Data Engineering, SAFe, to help in new data driven automation projects in different business areas, aiming at the continuous improvement of organizations.<br>
                 </p>
               </div>
             </div>
@@ -478,29 +477,20 @@
                   <ul class="skill-chart-list list-unstyled">
                     <li>
                       <div class="chart-header d-flex justify-content-between">
-                        <span class="skill-title">Machine Learning</span>
-                        <span class="percentage">70%</span>
-                      </div>
-                      <div class="chart-border">
-                        <div class="chart-percentage ninety-percent"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="chart-header d-flex justify-content-between">
-                        <span class="skill-title">Deep Learning</span>
-                        <span class="percentage">70%</span>
-                      </div>
-                      <div class="chart-border">
-                        <div class="chart-percentage ninety-percent"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="chart-header d-flex justify-content-between">
-                        <span class="skill-title">Python</span>
+                        <span class="skill-title">AI Agents automation</span>
                         <span class="percentage">80%</span>
                       </div>
                       <div class="chart-border">
-                        <div class="chart-percentage eighty-percent"></div>
+                        <div class="chart-percentage ninety-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">Data pipelines solutions</span>
+                        <span class="percentage">80%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-percent"></div>
                       </div>
                     </li>
                     <li>
@@ -509,13 +499,22 @@
                         <span class="percentage">90%</span>
                       </div>
                       <div class="chart-border">
+                        <div class="chart-percentage eighty-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">Python</span>
+                        <span class="percentage">80%</span>
+                      </div>
+                      <div class="chart-border">
                         <div class="chart-percentage seventy-percent"></div>
                       </div>
                     </li>
                     <li>
                       <div class="chart-header d-flex justify-content-between">
                         <span class="skill-title">Google Cloud and AWS</span>
-                        <span class="percentage">50%</span>
+                        <span class="percentage">70%</span>
                       </div>
                       <div class="chart-border">
                         <div class="chart-percentage ninety-five-percent"></div>
@@ -540,21 +539,32 @@
 
             <div class="row g-4">
               <!-- Project 1 -->
-              <div class="col-md-6" data-aos="fade-up">
-                <div class="card h-100 shadow-sm">
-                  <div class="card-body">
-                    <h3 class="card-title">Crime Prediction Model — Toronto</h3>
-                    <p class="mb-2"><strong>Objective:</strong> Predict crime hotspots to support police resource allocation using historical open data.</p>
-                    <div class="ratio ratio-16x9 mb-3">
-                      <video controls poster="images/thumbs/crime-prediction.jpg">
-                        <source src="videos/crime-prediction.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                      </video>
-                    </div>
-                    <p class="mb-0"><strong>Results:</strong> Built an interactive map and baseline ML pipeline used in presentations and portfolio; clear uplift vs naive baseline on hotspot identification.</p>
-                  </div>
-                </div>
+              <style>
+              .yt-responsive{position:relative;width:100%;aspect-ratio:16/9;background:#000;cursor:pointer;}
+              .yt-responsive>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+              .yt-responsive .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+                width:68px;height:48px;background:rgba(0,0,0,.7);border-radius:14px;display:flex;align-items:center;justify-content:center;}
+              .yt-responsive .play::before{content:"";border-left:18px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:3px;}
+              .yt-responsive iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+              </style>
+
+              <div class="yt-responsive" data-ytid="9fn-RTxazAQ" data-start="959">
+                <img src="images/thumbs/crime-prediction.jpg" alt="Crime Prediction">
+                <div class="play" aria-hidden="true"></div>
+                <noscript><a href="https://youtu.be/9fn-RTxazAQ?t=959">Watch on YouTube</a></noscript>
               </div>
+
+              <script>
+              document.querySelectorAll('.yt-responsive').forEach(el=>{
+                el.addEventListener('click', ()=>{
+                  const id = el.dataset.ytid, start = el.dataset.start || 0;
+                  const src = `https://www.youtube.com/embed/${id}?start=${start}&autoplay=1&modestbranding=1&rel=0&playsinline=1`;
+                  el.innerHTML = `<iframe src="${src}" title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen loading="lazy"></iframe>`;
+                }, { once:true });
+              });
+              </script>
 
               <!-- Project 2 -->
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
